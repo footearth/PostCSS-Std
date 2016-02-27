@@ -14,9 +14,12 @@ cnpm install --save-dev \
   babel-plugin-transform-runtime babel-preset-es2015 \
   babel-runtime@^5.8.0
 
+# cnpm install --save-dev \
+#   vue-html-loader vue-style-loader \
+#   vue-hot-reload-api vue-loader
+
 cnpm install --save-dev \
-  vue-html-loader css-loader vue-style-loader \
-  vue-hot-reload-api vue-loader
+  css-loader
 
 cnpm install --save-dev \
   coffee-script coffee-loader \
@@ -34,5 +37,20 @@ cnpm install --save-dev \
   gulp gulp-util run-sequence \
   # gulp-sequence
 
-cnpm install --save \
-  vue vue-router
+# cnpm install --save \
+#   vue vue-router
+
+cnpm install --save-dev \
+  gulp-postcss \
+  postcss-alias \
+  postcss-crip \
+  postcss-font-magician \
+  postcss-triangle \
+  postcss-circle \
+  postcss-all-link-colors \
+  postcss-center \
+  postcss-clearfix \
+  postcss-position \
+  postcss-size \
+  postcss-verthorz \
+  postcss-color-short

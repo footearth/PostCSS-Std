@@ -1,0 +1,13 @@
+@import 'common/mixin.flex.post.css';
+
+@utility fx {
+  @mixin flex {}
+}
+
+@utility fxI {
+  @mixin flexInline {}
+}
+
+@utility fxOrient {
+  @mixin icon {}
+}

@@ -1,0 +1,311 @@
+/*
+    Responsive Typography
+*/
+
+/*
+
+.foo {
+  font-size: responsive;
+}
+
+html {
+  font-size: responsive 12px 21px;
+  font-range: 420px 1280px;
+}
+
+html {
+  font-size: responsive;
+  min-font-size: 12px;
+  max-font-size: 21px;
+  lower-font-range: 420px;
+  upper-font-range: 1280px;
+}
+
+*/
+
+html {
+  font-size: 16px;
+  font-size: calc(12px + 9 * ((100vw - 420px) / 860));
+}
+
+@media screen and (min-width: 1280px) {
+
+  html {
+    font-size: 21px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+
+  html {
+    font-size: 12px;
+  }
+}
+
+/*
+    Shorthand Positioning
+*/
+
+.foo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.bar {
+  position: relative;
+  top: 20%;
+  right: auto;
+  bottom: 20%;
+  left: auto;
+}
+
+.baz {
+  position: fixed;
+  top: 0;
+  right: 20px;
+  bottom: 10px;
+  left: 20px;
+}
+
+/*
+    Quantity Pseudo-Selectors
+*/
+
+li:nth-last-child(n+4), li:nth-last-child(n+4) ~ li {
+  color: blue;
+}
+
+li:nth-last-child(-n+4):first-child, li:nth-last-child(-n+4):first-child ~ li {
+  color: blue;
+}
+
+li:nth-last-child(n+4):nth-last-child(-n+6):first-child, li:nth-last-child(n+4):nth-last-child(-n+6):first-child ~ li {
+  color: blue;
+}
+
+li:nth-last-child(4):first-child, li:nth-last-child(4):first-child ~ li {
+  color: blue;
+}
+
+/*
+    Property Aliases
+*/
+
+.foo {
+  font-size: 16px;
+  -webkit-transition: background 200ms ease;
+  transition: background 200ms ease;
+}
+
+/*
+    Input Pseudo-Elements
+*/
+
+input::-webkit-input-placeholder {
+  color: black;
+  opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+}
+
+input::-moz-placeholder {
+  color: black;
+  opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+}
+
+input:-ms-input-placeholder {
+  color: black;
+  opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+}
+
+input::placeholder {
+  color: black;
+  opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+}
+
+/*
+    Range Elements
+*/
+
+input[type="range"]::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  background: #9d9d9d;
+  height: 3px;
+}
+
+input[type="range"]::-moz-range-track {
+  -moz-appearance: none;
+  background: #9d9d9d;
+  height: 3px;
+}
+
+input[type="range"]::-ms-track {
+  background: #9d9d9d;
+  height: 3px;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+}
+
+input[type="range"]::-moz-focus-outer {
+  border: 0;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: #4286be;
+  width: 16px;
+  height: 8px;
+}
+
+input[type="range"]::-moz-range-thumb {
+  -moz-appearance: none;
+  background: #4286be;
+  width: 16px;
+  height: 8px;
+}
+
+input[type="range"]::-ms-thumb {
+  background: #4286be;
+  width: 16px;
+  height: 8px;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+}
+
+input[type="range"]::-moz-focus-outer {
+  border: 0;
+}
+
+/*
+    Native Clearfix
+*/
+
+.foo:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.bar:before,
+.bar:after {
+  content: '';
+  display: table;
+}
+
+.bar:after {
+  clear: both;
+}
+
+.bar {
+  zoom: 1;
+}
+
+/*
+    Font Src Expansion
+*/
+
+@font-face {
+  font-family: 'My Font';
+  src: url("/my/font/file.eot");
+  src: url("/my/font/file.eot?#iefix") format('embedded-opentype'),
+       url("/my/font/file.woff") format('woff'),
+       url("/my/font/file.ttf") format('truetype'),
+       url("/my/font/file.svg") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*
+    Hex RGBA Shortcuts
+*/
+
+.foo {
+  color: #ffffff;
+  color: rgba(255,255,255, 0.8);
+}
+
+/*
+    All The Easings
+*/
+
+.foo {
+  -webkit-transition: all 250ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: all 250ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+/*
+    RGBA
+*/
+
+.foo {
+  background: #99dd99;
+  background: rgba(153, 221, 153, 0.8);
+}
+
+/*
+    Rem units
+*/
+
+/*
+
+.foo {
+  font-size: 2rem;
+}
+
+*/
+
+/*
+    Pseudo elements
+*/
+
+.foo:before {
+  content: '';
+  color: blue;
+}
+
+/*
+    vmin
+*/
+
+.foo {
+  width: 50vm;
+  width: 50vmin;
+}
+
+/*
+    will-change
+*/
+
+.foo {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  will-change: transform;
+}
+
+/*
+    Automatic Prefixing
+*/
+
+.foo {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex
+}
+
+/*
+    Cleaning
+*/
+
+.foo {
+  border-radius: 5px;
+}

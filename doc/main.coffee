@@ -1,0 +1,1 @@
+require './style.dest.css'

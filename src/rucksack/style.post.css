@@ -1,0 +1,204 @@
+/*
+    Responsive Typography
+*/
+
+/*
+
+.foo {
+  font-size: responsive;
+}
+
+html {
+  font-size: responsive 12px 21px;
+  font-range: 420px 1280px;
+}
+
+html {
+  font-size: responsive;
+  min-font-size: 12px;
+  max-font-size: 21px;
+  lower-font-range: 420px;
+  upper-font-range: 1280px;
+}
+
+*/
+
+html {
+  font-size: 16px;
+  font-size: responsive;
+}
+
+/*
+    Shorthand Positioning
+*/
+
+.foo {
+  position: absolute 0;
+}
+
+.bar {
+  position: relative 20% auto;
+}
+
+.baz {
+  position: fixed 0 20px 10px;
+}
+
+/*
+    Quantity Pseudo-Selectors
+*/
+
+li:at-least(4) {
+  color: blue;
+}
+
+li:at-most(4) {
+  color: blue;
+}
+
+li:between(4, 6) {
+  color: blue;
+}
+
+li:exactly(4) {
+  color: blue;
+}
+
+/*
+    Property Aliases
+*/
+
+@alias {
+  fs: font-size;
+  bg: background;
+}
+
+.foo {
+  fs: 16px;
+  transition: bg 200ms ease;
+}
+
+/*
+    Input Pseudo-Elements
+*/
+
+input::placeholder {
+  color: black;
+  opacity: 0.8;
+}
+
+/*
+    Range Elements
+*/
+
+input[type="range"]::track {
+  background: #9d9d9d;
+  height: 3px;
+}
+
+input[type="range"]::thumb {
+  background: #4286be;
+  width: 16px;
+  height: 8px;
+}
+
+/*
+    Native Clearfix
+*/
+
+.foo {
+  clear: fix;
+}
+
+.bar {
+  clear: fix-legacy;
+}
+
+/*
+    Font Src Expansion
+*/
+
+@font-face {
+  font-family: 'My Font';
+  font-path: '/my/font/file';
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*
+    Hex RGBA Shortcuts
+*/
+
+.foo {
+  color: rgba(#fff, 0.8);
+}
+
+/*
+    All The Easings
+*/
+
+.foo {
+  transition: all 250ms ease-in-cubic;
+}
+
+/*
+    RGBA
+*/
+
+.foo {
+  background: rgba(153, 221, 153, 0.8);
+}
+
+/*
+    Rem units
+*/
+
+/*
+
+.foo {
+  font-size: 2rem;
+}
+
+*/
+
+/*
+    Pseudo elements
+*/
+
+.foo::before {
+  content: '';
+  color: blue;
+}
+
+/*
+    vmin
+*/
+
+.foo {
+  width: 50vmin;
+}
+
+/*
+    will-change
+*/
+
+.foo {
+  will-change: transform;
+}
+
+/*
+    Automatic Prefixing
+*/
+
+.foo {
+  display: flex
+}
+
+/*
+    Cleaning
+*/
+
+.foo {
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+}
