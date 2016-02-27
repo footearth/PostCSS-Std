@@ -1,14 +1,14 @@
 {
-  "name": "PostCSS-Demo",
-  "description": "PostCSS-Demo",
+  "name": "PostCSS-Std",
+  "description": "PostCSS-Std",
   "author": ":FooTearth <footearth@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Mooxe000/PostCSS-Demo.git"
+    "url": "https://github.com/footearth/PostCSS-Std.git"
   },
   "bugs": {
-    "url": "https://github.com/Mooxe000/PostCSS-Demo/issues"
+    "url": "https://github.com/footearth/PostCSS-Std/issues"
   },
   "scripts": {
     "dev": "webpack-dev-server --inline --hot --content-base dist --config webpack/dev.conf.coffee"

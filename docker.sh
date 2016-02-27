@@ -4,7 +4,7 @@ cwd="$(cd -P -- "$(dirname -- "$0")" && pwd -P)"
 
 set -e
 
-pjName="PostCSS-Demo"
+pjName="PostCSS-Std"
 
 docker run \
   --name ${pjName} \

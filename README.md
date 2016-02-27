@@ -1,4 +1,4 @@
-# PostCSS-Demo
+# PostCSS-Std
 
 * http://postcss.org/
 * https://github.com/postcss/postcss
