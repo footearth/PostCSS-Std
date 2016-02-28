@@ -1,0 +1,15 @@
+@alias {
+  fx-i: inline-flex;
+  fx: flex;
+}
+@utility fx {
+  d: fx !important;
+}
+@utility fxI {
+  d: fx-i !important;
+}
+@utility fxDir {
+  flex-direction: row;
+  box-orient: horizontal;
+  box-direction: normal;
+}

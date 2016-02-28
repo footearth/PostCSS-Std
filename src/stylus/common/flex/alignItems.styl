@@ -1,0 +1,7 @@
+// align-items
+// flex-start | flex-end | center | baseline | stretch
+alignItemsTypes = 'flex-start' 'flex-end' 'center' 'baseline' 'stretch'
+
+flexAlignItems(alignItems = stretch)
+  if alignItems in alignItemsTypes
+    align-items alignItems

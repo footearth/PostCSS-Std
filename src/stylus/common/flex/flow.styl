@@ -1,0 +1,41 @@
+// flex-direction
+// row | row-reverse | column | column-reverse
+directionTypes = 'row' 'row-reverse' 'column' 'column-reverse'
+
+flexDirectionBase(direction = row)
+  if direction in directionTypes
+    flex-direction direction
+
+flexOrient(direction = row)
+
+  if direction is a 'row' or 'row-reverse'
+    box-orient horizontal
+
+  else if direction is a 'column' or 'column-reverse'
+    box-orient vertical
+
+flexReverse(direction = row)
+
+  if direction is a 'row' or 'column'
+    box-direction normal
+
+  else if direction is a 'row-reverse' or 'column-reverse'
+    box-direction reverse
+
+flexDirection(direction = row)
+  if direction in directionTypes
+    flexDirectionBase(direction)
+    flexOrient(direction)
+    flexReverse(direction)
+
+// wrap
+// nowrap | wrap | wrap-reverse
+wrapTypes =  'nowrap' 'wrap' 'wrap-reverse'
+flexWrap(wrapType = nowrap)
+  if wrapType in wrapTypes
+    flex-wrap wrapType
+
+// flow
+flexFlow(direction = row, wrapType = nowrap)
+  if direction in directionTypes and wrapType in wrapTypes
+    flex-flow direction wrapTypes

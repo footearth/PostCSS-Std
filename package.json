@@ -48,6 +48,7 @@
     "gulp-postcss": "^6.1.0",
     "gulp-rename": "^1.2.2",
     "gulp-rucksack": "^0.1.2",
+    "gulp-stylus": "^2.3.0",
     "gulp-util": "^3.0.7",
     "html-webpack-plugin": "^2.9.0",
     "jade": "^1.11.0",
