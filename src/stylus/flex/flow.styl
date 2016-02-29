@@ -2,6 +2,11 @@
 // row | row-reverse | column | column-reverse
 directionTypes = 'row' 'row-reverse' 'column' 'column-reverse'
 
+// row（默认值）：主轴为水平方向，起点在左端。
+// row-reverse：主轴为水平方向，起点在右端。
+// column：主轴为垂直方向，起点在上沿。
+// column-reverse：主轴为垂直方向，起点在下沿。
+
 flexDirectionBase(direction = row)
   if direction in directionTypes
     fx-d direction
@@ -31,6 +36,11 @@ flexDirection(direction = row)
 // wrap
 // nowrap | wrap | wrap-reverse
 wrapTypes =  'nowrap' 'wrap' 'wrap-reverse'
+
+// nowrap（默认）：不换行。
+// wrap：换行，第一行在上方。
+// wrap-reverse：换行，第一行在下方。
+
 flexWrap(wrapType = nowrap)
   if wrapType in wrapTypes
     fx-w wrapType

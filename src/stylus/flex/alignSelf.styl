@@ -3,6 +3,13 @@
 // flex-start | flex-end | center | baseline | stretch
 alignSelfTypes = 'auto' 'flex-start' 'flex-end' 'center' 'baseline' 'stretch'
 
+// flex-start：交叉轴的起点对齐。
+// flex-end：交叉轴的终点对齐。
+// center：交叉轴的中点对齐。
+// baseline: 项目的第一行文字的基线对齐。
+// stretch：将占满整个容器的高度。
+// auto：（默认值）自适应
+
 flexAlignSelf(alignSelf = center)
   if alignSelf in alignSelfTypes
     as alignSelf

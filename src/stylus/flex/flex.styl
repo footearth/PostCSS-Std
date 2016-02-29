@@ -7,18 +7,27 @@ flexInline()
   d ifx !important
 
 
+// direction && wrap
 @import './flow.styl'
 
 
+// 主轴：和 direction 方向一致
+// 交叉轴：和 direction 方向相反
+
+// jstify-content: 主轴方向对齐方式
 @import './justifyContent.styl'
+// align-items: 主轴方向对齐方式
 @import './alignItems.styl'
+// align-self: align-items 的例外规则
+@import './alignSelf.styl'
+// 简单理解为行距
 @import './alignContent.styl'
 
 
 // order
+// 属性定义项目的排列顺序。数值越小，排列越靠前，默认为0。
 flexOrder(order = 0)
   order order
-
 
 
 flexGrow(grow = 0)
@@ -34,6 +43,3 @@ flex(grow = 0, shrink = 1, basis = auto)
   // auto = 1 1 auto
   // none = 0 0 auto
   fx grow shrink basis
-
-
-@import './alignSelf.styl'
