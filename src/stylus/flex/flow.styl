@@ -4,23 +4,23 @@ directionTypes = 'row' 'row-reverse' 'column' 'column-reverse'
 
 flexDirectionBase(direction = row)
   if direction in directionTypes
-    flex-direction direction
+    fx-d direction
 
 flexOrient(direction = row)
 
   if direction is a 'row' or 'row-reverse'
-    box-orient horizontal
+    box-o horizontal
 
   else if direction is a 'column' or 'column-reverse'
-    box-orient vertical
+    box-o vertical
 
 flexReverse(direction = row)
 
   if direction is a 'row' or 'column'
-    box-direction normal
+    box-d normal
 
   else if direction is a 'row-reverse' or 'column-reverse'
-    box-direction reverse
+    box-d reverse
 
 flexDirection(direction = row)
   if direction in directionTypes
@@ -33,9 +33,9 @@ flexDirection(direction = row)
 wrapTypes =  'nowrap' 'wrap' 'wrap-reverse'
 flexWrap(wrapType = nowrap)
   if wrapType in wrapTypes
-    flex-wrap wrapType
+    fx-w wrapType
 
 // flow
 flexFlow(direction = row, wrapType = nowrap)
   if direction in directionTypes and wrapType in wrapTypes
-    flex-flow direction wrapTypes
+    fx-f direction wrapTypes

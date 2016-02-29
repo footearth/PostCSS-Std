@@ -1,0 +1,39 @@
+@import '../common/alias.styl'
+
+flex()
+  d fx !important
+
+flexInline()
+  d ifx !important
+
+
+@import './flow.styl'
+
+
+@import './justifyContent.styl'
+@import './alignItems.styl'
+@import './alignContent.styl'
+
+
+// order
+flexOrder(order = 0)
+  order order
+
+
+
+flexGrow(grow = 0)
+  fx-g grow
+
+flexShrink(shrink = 1)
+  fx-s shrink
+
+flexBasis(basis = auto)
+  fx-b basis
+
+flex(grow = 0, shrink = 1, basis = auto)
+  // auto = 1 1 auto
+  // none = 0 0 auto
+  fx grow shrink basis
+
+
+@import './alignSelf.styl'
