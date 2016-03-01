@@ -41,16 +41,30 @@ cnpm install --save-dev \
 #   vue vue-router
 
 cnpm install --save-dev \
+  gulp-rename \
+  gulp-stylus
+
+cnpm install --save-dev \
   gulp-postcss \
+  postcss-loader \
   postcss-alias \
   postcss-crip \
-  postcss-font-magician \
-  postcss-triangle \
-  postcss-circle \
-  postcss-all-link-colors \
-  postcss-center \
-  postcss-clearfix \
-  postcss-position \
-  postcss-size \
-  postcss-verthorz \
-  postcss-color-short
+  postcss-simple-vars \
+  postcss-bem \
+  postcss-nested \
+  autoprefixer \
+  cssnano
+
+  # postcss-font-magician \
+  # postcss-triangle \
+  # postcss-circle \
+  # postcss-all-link-colors \
+  # postcss-center \
+  # postcss-clearfix \
+  # postcss-position \
+  # postcss-size \
+  # postcss-verthorz \
+  # postcss-color-short
+
+cnpm install --save \
+  normalize.css

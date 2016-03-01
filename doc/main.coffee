@@ -1,1 +1,1 @@
-require './style.dest.css'
+require './style.styl'
